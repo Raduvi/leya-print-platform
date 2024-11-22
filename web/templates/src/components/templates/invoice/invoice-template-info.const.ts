@@ -1,7 +1,7 @@
 import { TemplateInfo } from '@leya-print/template-api';
 import { invoiceSamples } from './invoice-samples';
 
-export const invoiceTemplateInfo: TemplateInfo<string> = {
+export const invoiceTemplateInfo: TemplateInfo = {
   ident: 'invoice',
   title: 'Invoice',
   description: 'invoices for customers',

@@ -1,6 +1,6 @@
 import { TemplateInfo } from '@leya-print/template-api';
 
-export const templateDemoTemplateInfo: TemplateInfo<string> = {
+export const templateDemoTemplateInfo: TemplateInfo = {
   ident: 'template-demo',
   title: 'Template Demo',
   description: 'shows the different parts of a template',
