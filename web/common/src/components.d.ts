@@ -15,8 +15,6 @@ export namespace Components {
         "imgAlt": string;
         "imgSrc": string;
     }
-    interface LeyaPrintMarkdownConverter {
-    }
     interface LeyaPrintWatermark {
     }
 }
@@ -33,12 +31,6 @@ declare global {
         prototype: HTMLLeyaPrintImageFetchElement;
         new (): HTMLLeyaPrintImageFetchElement;
     };
-    interface HTMLLeyaPrintMarkdownConverterElement extends Components.LeyaPrintMarkdownConverter, HTMLStencilElement {
-    }
-    var HTMLLeyaPrintMarkdownConverterElement: {
-        prototype: HTMLLeyaPrintMarkdownConverterElement;
-        new (): HTMLLeyaPrintMarkdownConverterElement;
-    };
     interface HTMLLeyaPrintWatermarkElement extends Components.LeyaPrintWatermark, HTMLStencilElement {
     }
     var HTMLLeyaPrintWatermarkElement: {
@@ -48,7 +40,6 @@ declare global {
     interface HTMLElementTagNameMap {
         "leya-print-graph-paper": HTMLLeyaPrintGraphPaperElement;
         "leya-print-image-fetch": HTMLLeyaPrintImageFetchElement;
-        "leya-print-markdown-converter": HTMLLeyaPrintMarkdownConverterElement;
         "leya-print-watermark": HTMLLeyaPrintWatermarkElement;
     }
 }
@@ -62,14 +53,11 @@ declare namespace LocalJSX {
         "imgAlt"?: string;
         "imgSrc"?: string;
     }
-    interface LeyaPrintMarkdownConverter {
-    }
     interface LeyaPrintWatermark {
     }
     interface IntrinsicElements {
         "leya-print-graph-paper": LeyaPrintGraphPaper;
         "leya-print-image-fetch": LeyaPrintImageFetch;
-        "leya-print-markdown-converter": LeyaPrintMarkdownConverter;
         "leya-print-watermark": LeyaPrintWatermark;
     }
 }
@@ -79,7 +67,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "leya-print-graph-paper": LocalJSX.LeyaPrintGraphPaper & JSXBase.HTMLAttributes<HTMLLeyaPrintGraphPaperElement>;
             "leya-print-image-fetch": LocalJSX.LeyaPrintImageFetch & JSXBase.HTMLAttributes<HTMLLeyaPrintImageFetchElement>;
-            "leya-print-markdown-converter": LocalJSX.LeyaPrintMarkdownConverter & JSXBase.HTMLAttributes<HTMLLeyaPrintMarkdownConverterElement>;
             "leya-print-watermark": LocalJSX.LeyaPrintWatermark & JSXBase.HTMLAttributes<HTMLLeyaPrintWatermarkElement>;
         }
     }

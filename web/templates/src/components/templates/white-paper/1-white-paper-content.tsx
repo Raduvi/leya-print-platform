@@ -1,6 +1,6 @@
 import { Component, h, Host, State } from '@stencil/core';
 import { WhitePaper } from './white-paper-model';
-import { marked } from 'marked/lib/marked.esm';
+import { marked } from 'marked';
 
 @Component({
   tag: 'tpl-white-paper-content',

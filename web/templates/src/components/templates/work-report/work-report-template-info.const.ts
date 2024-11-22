@@ -1,6 +1,6 @@
 import { TemplateInfo } from '@leya-print/template-api';
 
-export const workReportTemplateInfo: TemplateInfo = {
+export const workReportTemplateInfo: TemplateInfo<string> = {
   ident: 'work-report',
   title: 'Work Report',
   description: 'work log of hours and tasks',
