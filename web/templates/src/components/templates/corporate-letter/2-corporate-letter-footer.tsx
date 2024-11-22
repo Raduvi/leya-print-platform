@@ -1,10 +1,10 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'tpl-white-paper-footer',
-  styleUrl: '2-white-paper-footer.scss',
+  tag: 'tpl-corporate-letter-footer',
+  styleUrl: '2-corporate-letter-footer.scss',
 })
-export class WhitePaperFooterTpl {
+export class CorporateLetterFooterTpl {
   render() {
     return (
       <div class="page_number">

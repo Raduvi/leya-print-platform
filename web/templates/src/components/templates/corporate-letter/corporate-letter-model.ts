@@ -1,4 +1,4 @@
-export interface WhitePaper {
+export interface CorporateLetter {
   title: string;
   contents: string;
 }

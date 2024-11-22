@@ -1,15 +1,15 @@
 import { Component, h, Host, State } from '@stencil/core';
-import { WhitePaper } from './white-paper-model';
+import { CorporateLetter } from './corporate-letter-model';
 import { marked } from 'marked';
 
 @Component({
-  tag: 'tpl-white-paper-content',
-  styleUrl: '1-white-paper-content.scss',
+  tag: 'tpl-corporate-letter-content',
+  styleUrl: '1-corporate-letter-content.scss',
   shadow: false,
   assetsDirs: ['assets'],
 })
-export class WhitePaperContentTpl {
-  @State() data: WhitePaper = (window as any).providedData || {
+export class CorporateLetterContentTpl {
+  @State() data: CorporateLetter = (window as any).providedData || {
     title: 'no data',
     contents: 'test',
   };
