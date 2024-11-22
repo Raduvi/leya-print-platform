@@ -1,0 +1,22 @@
+@import 'corporate-letter.global';
+@import 'corporate-letter.variables';
+tpl-corporate-letter-content {
+    display: block;
+    padding: 0 $var__page__margin;
+}
+
+@media print {
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+.corporate-letter__content-end {
+    text-align: center;
+    border: 1px solid white;
+}
+
+.corporate-letter__content__spacer {
+    margin: $var__innerPadding 0;
+    padding: $var__innerPadding;
+}

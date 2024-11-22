@@ -21,6 +21,12 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface TplCorporateLetterContent {
+    }
+    interface TplCorporateLetterFooter {
+    }
+    interface TplCorporateLetterHeader {
+    }
     interface TplInvoiceContent {
     }
     interface TplInvoiceFooter {
@@ -52,6 +58,24 @@ declare global {
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
+    };
+    interface HTMLTplCorporateLetterContentElement extends Components.TplCorporateLetterContent, HTMLStencilElement {
+    }
+    var HTMLTplCorporateLetterContentElement: {
+        prototype: HTMLTplCorporateLetterContentElement;
+        new (): HTMLTplCorporateLetterContentElement;
+    };
+    interface HTMLTplCorporateLetterFooterElement extends Components.TplCorporateLetterFooter, HTMLStencilElement {
+    }
+    var HTMLTplCorporateLetterFooterElement: {
+        prototype: HTMLTplCorporateLetterFooterElement;
+        new (): HTMLTplCorporateLetterFooterElement;
+    };
+    interface HTMLTplCorporateLetterHeaderElement extends Components.TplCorporateLetterHeader, HTMLStencilElement {
+    }
+    var HTMLTplCorporateLetterHeaderElement: {
+        prototype: HTMLTplCorporateLetterHeaderElement;
+        new (): HTMLTplCorporateLetterHeaderElement;
     };
     interface HTMLTplInvoiceContentElement extends Components.TplInvoiceContent, HTMLStencilElement {
     }
@@ -121,6 +145,9 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "tpl-corporate-letter-content": HTMLTplCorporateLetterContentElement;
+        "tpl-corporate-letter-footer": HTMLTplCorporateLetterFooterElement;
+        "tpl-corporate-letter-header": HTMLTplCorporateLetterHeaderElement;
         "tpl-invoice-content": HTMLTplInvoiceContentElement;
         "tpl-invoice-footer": HTMLTplInvoiceFooterElement;
         "tpl-invoice-header": HTMLTplInvoiceHeaderElement;
@@ -149,6 +176,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface TplCorporateLetterContent {
+    }
+    interface TplCorporateLetterFooter {
+    }
+    interface TplCorporateLetterHeader {
+    }
     interface TplInvoiceContent {
     }
     interface TplInvoiceFooter {
@@ -175,6 +208,9 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "tpl-corporate-letter-content": TplCorporateLetterContent;
+        "tpl-corporate-letter-footer": TplCorporateLetterFooter;
+        "tpl-corporate-letter-header": TplCorporateLetterHeader;
         "tpl-invoice-content": TplInvoiceContent;
         "tpl-invoice-footer": TplInvoiceFooter;
         "tpl-invoice-header": TplInvoiceHeader;
@@ -193,6 +229,9 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "tpl-corporate-letter-content": LocalJSX.TplCorporateLetterContent & JSXBase.HTMLAttributes<HTMLTplCorporateLetterContentElement>;
+            "tpl-corporate-letter-footer": LocalJSX.TplCorporateLetterFooter & JSXBase.HTMLAttributes<HTMLTplCorporateLetterFooterElement>;
+            "tpl-corporate-letter-header": LocalJSX.TplCorporateLetterHeader & JSXBase.HTMLAttributes<HTMLTplCorporateLetterHeaderElement>;
             "tpl-invoice-content": LocalJSX.TplInvoiceContent & JSXBase.HTMLAttributes<HTMLTplInvoiceContentElement>;
             "tpl-invoice-footer": LocalJSX.TplInvoiceFooter & JSXBase.HTMLAttributes<HTMLTplInvoiceFooterElement>;
             "tpl-invoice-header": LocalJSX.TplInvoiceHeader & JSXBase.HTMLAttributes<HTMLTplInvoiceHeaderElement>;

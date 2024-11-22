@@ -4,7 +4,7 @@
  * that form its content and optional header and footer.
  * It also contains sample data sets that help in testing and demonstrating the template.
  */
-export interface TemplateInfo {
+export interface TemplateInfo<T = any> {
   /** Unique, URL-compatible identifier for the template within the scope of its package. */
   ident: string;
 

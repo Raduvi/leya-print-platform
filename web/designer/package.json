@@ -16,7 +16,8 @@
         "@stencil/core": "2.13.0",
         "@types/jest": "^27.0.3",
         "jest": "^27.5.1",
-        "jest-cli": "^27.4.5"
+        "jest-cli": "^27.4.5",
+        "puppeteer": "^23.9.0"
     },
     "repository": {
         "type": "git",
@@ -34,7 +35,6 @@
         "@leya-print/template-api": "^1.0.0-beta",
         "@leya-print/web-common": "file:../common/leya-print-web-common-1.0.0.tgz",
         "@stencil/sass": "^1.5.2",
-        "puppeteer": "^23.7.1",
         "rxjs": "^7.5.6"
     }
 }
