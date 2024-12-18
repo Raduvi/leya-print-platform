@@ -1,8 +1,7 @@
 import { TemplateInfo } from '@leya-print/template-api';
-import { CorporateLetter } from './corporate-letter-model';
 import sampleData from './corporate-letter.json';
 
-export const corporateLetterTemplateInfo: TemplateInfo<CorporateLetter> = {
+export const corporateLetterTemplateInfo: TemplateInfo = {
   ident: 'corporate-letter',
   title: 'Corporate Letter',
   description: 'Corporate Letter with custom markdown content about the template packages feature of the Leya Print Platform',
